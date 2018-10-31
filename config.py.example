@@ -1,0 +1,2 @@
+# Rename this file to config.py
+token = '' # insert telegram bot token
