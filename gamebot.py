@@ -4,7 +4,7 @@ import cities_script
 bot = telebot.TeleBot(config.token)
 @bot.message_handler(content_types=["text"])
 def handle_text(message):
-    user_message = input("Введите город")
+    user_message = message.text
     i = user_message[-1] 
     for city in cities_script.city:
         if i == city['name'][0]:
